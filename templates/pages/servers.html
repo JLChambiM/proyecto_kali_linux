@@ -1,0 +1,158 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Análisis de Servidores - Kali Linux{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content text-center">
+            <h1 class="display-4">Análisis de Servidores con Kali Linux</h1>
+            <p class="lead">Herramientas y técnicas para auditar y evaluar la seguridad de diferentes tipos de servidores</p>
+        </div>
+    </div>
+</section>
+<!-- Nota Informativa -->
+<section class="explore-section">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h3><i class="fa-solid fa-info-circle"></i> Importante</h3>
+                <p>Es importante destacar que Kali Linux no está diseñado principalmente para funcionar como servidor web o de aplicaciones. Si bien incluye herramientas como Apache o Nginx para pruebas, su propósito principal es la realización de pruebas de penetración y auditorías de seguridad.</p>
+                
+                <p>Para implementar servidores en entornos de producción, se recomienda utilizar distribuciones Linux especializadas como:</p>
+                <ul>
+                    <li>Ubuntu Server</li>
+                    <li>CentOS</li>
+                    <li>Debian</li>
+                    <li>Red Hat Enterprise Linux</li>
+                </ul>
+                
+                <p>Estas distribuciones están optimizadas para funcionar como servidores y ofrecen mejor estabilidad y soporte para ese propósito.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Tipos de Análisis -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Análisis por Tipo de Servidor</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-globe"></i> Servidores Web</h3>
+                        <div class="tool-section">
+                            <h4>Herramientas de Análisis</h4>
+                            <ul>
+                                <li><strong>Nikto:</strong> Escáner de vulnerabilidades web</li>
+                                <li><strong>WPScan:</strong> Análisis de seguridad WordPress</li>
+                                <li><strong>DIRB:</strong> Búsqueda de directorios web ocultos</li>
+                                <li><strong>Burp Suite:</strong> Testing de aplicaciones web</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-database"></i> Servidores de Base de Datos</h3>
+                        <div class="tool-section">
+                            <h4>Herramientas de Análisis</h4>
+                            <ul>
+                                <li><strong>SQLMap:</strong> Testing de inyección SQL</li>
+                                <li><strong>MySQLoit:</strong> Explotación de MySQL</li>
+                                <li><strong>DBPwAudit:</strong> Auditoría de contraseñas DB</li>
+                                <li><strong>SQLNinja:</strong> Testing de SQL Server</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-folder-tree"></i> Servidores de Archivos</h3>
+                        <div class="tool-section">
+                            <h4>Herramientas de Análisis</h4>
+                            <ul>
+                                <li><strong>SMBMap:</strong> Enumeración de recursos Samba</li>
+                                <li><strong>Enum4Linux:</strong> Enumeración de Windows/Samba</li>
+                                <li><strong>NFSspy:</strong> Auditoría de servidores NFS</li>
+                                <li><strong>CrackMapExec:</strong> Testing de redes Windows</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-shield-halved"></i> Servidores de Autenticación</h3>
+                        <div class="tool-section">
+                            <h4>Herramientas de Análisis</h4>
+                            <ul>
+                                <li><strong>Hydra:</strong> Testing de autenticación</li>
+                                <li><strong>RainbowCrack:</strong> Cracking de contraseñas</li>
+                                <li><strong>John the Ripper:</strong> Auditoría de passwords</li>
+                                <li><strong>Medusa:</strong> Ataque de fuerza bruta</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Metodología de Análisis -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Metodología de Análisis</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-magnifying-glass"></i> Reconocimiento</h3>
+                        <ul>
+                            <li>Identificación de servicios</li>
+                            <li>Escaneo de puertos</li>
+                            <li>Enumeración de recursos</li>
+                            <li>Detección de versiones</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-bug"></i> Análisis de Vulnerabilidades</h3>
+                        <ul>
+                            <li>Escaneo de vulnerabilidades</li>
+                            <li>Verificación de configuraciones</li>
+                            <li>Búsqueda de exploits conocidos</li>
+                            <li>Evaluación de riesgos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-file-lines"></i> Reportes</h3>
+                        <ul>
+                            <li>Documentación de hallazgos</li>
+                            <li>Clasificación de vulnerabilidades</li>
+                            <li>Recomendaciones de seguridad</li>
+                            <li>Plan de mitigación</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

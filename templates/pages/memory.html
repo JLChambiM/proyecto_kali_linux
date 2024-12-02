@@ -1,0 +1,149 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Gestión de Memoria - Kali Linux{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content text-center">
+            <h1 class="display-4">Gestión de Memoria en Kali Linux</h1>
+            <p class="lead">Descubre cómo Kali Linux administra y optimiza la memoria del sistema</p>
+        </div>
+    </div>
+</section>
+
+<!-- Conceptos Básicos -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Conceptos Fundamentales</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-memory"></i> Tipos de Memoria</h3>
+                        <ul>
+                            <li><strong>RAM (Memoria Física):</strong> Memoria principal del sistema</li>
+                            <li><strong>Swap:</strong> Espacio en disco usado como memoria virtual</li>
+                            <li><strong>Cache:</strong> Memoria de acceso rápido para datos frecuentes</li>
+                            <li><strong>Buffers:</strong> Memoria temporal para operaciones de E/S</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-gears"></i> Gestión de Memoria Virtual</h3>
+                        <ul>
+                            <li><strong>Paginación:</strong> División de memoria en páginas</li>
+                            <li><strong>Swapping:</strong> Intercambio entre RAM y disco</li>
+                            <li><strong>MMU:</strong> Unidad de gestión de memoria</li>
+                            <li><strong>TLB:</strong> Buffer de traducción anticipada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Herramientas de Monitoreo -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Herramientas de Monitoreo de Memoria</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-gauge"></i> Comandos Básicos</h3>
+                        <div class="command-section">
+                            <code>free -h</code>
+                            <p>Muestra el uso de memoria en formato legible</p>
+                        </div>
+                        <div class="command-section">
+                            <code>vmstat</code>
+                            <p>Estadísticas de memoria virtual</p>
+                        </div>
+                        <div class="command-section">
+                            <code>swapon --show</code>
+                            <p>Muestra información del espacio swap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-chart-simple"></i> Monitoreo Avanzado</h3>
+                        <div class="command-section">
+                            <code>htop</code>
+                            <p>Monitor interactivo de sistema</p>
+                        </div>
+                        <div class="command-section">
+                            <code>smem</code>
+                            <p>Informe detallado de uso de memoria</p>
+                        </div>
+                        <div class="command-section">
+                            <code>ps_mem</code>
+                            <p>Muestra el uso real de memoria por proceso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-wrench"></i> Gestión de Memoria</h3>
+                        <div class="command-section">
+                            <code>sync; echo 3 > /proc/sys/vm/drop_caches</code>
+                            <p>Limpia la cache del sistema</p>
+                        </div>
+                        <div class="command-section">
+                            <code>swapoff -a; swapon -a</code>
+                            <p>Reinicia el espacio swap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Optimización -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Optimización de Memoria</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-rocket"></i> Técnicas de Optimización</h3>
+                        <ul>
+                            <li>Ajuste del espacio swap</li>
+                            <li>Configuración de la cache del sistema</li>
+                            <li>Gestión de procesos con alto consumo</li>
+                            <li>Monitoreo y ajuste de rendimiento</li>
+                            <li>Liberación periódica de memoria</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-shield-halved"></i> Consideraciones de Seguridad</h3>
+                        <ul>
+                            <li>Protección contra desbordamiento de memoria</li>
+                            <li>Aislamiento de memoria entre procesos</li>
+                            <li>Encriptación de memoria swap</li>
+                            <li>Prevención de fugas de memoria</li>
+                            <li>Monitoreo de actividades maliciosas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

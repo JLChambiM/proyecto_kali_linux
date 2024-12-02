@@ -1,0 +1,463 @@
+/* Estilos generales */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.dropdown-menu {
+    background-color: #2d2d2d;
+    border: 1px solid #333;
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-item:hover {
+    background-color: #3d3d3d;
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero-full {
+    height: 100vh;
+    background: url('../images/kali-background.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-full::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    padding: 2rem;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.hero-buttons .btn {
+    padding: 15px 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Cards */
+.card {
+    background-color: #2d2d2d;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Secciones de Exploración */
+.explore-section {
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+.explore-section:nth-child(odd) {
+    background-color: #1a1a1a;
+}
+
+.explore-section:nth-child(even) {
+    background-color: #2d2d2d;
+}
+
+.section-content {
+    margin: 50px 0;
+}
+
+.section-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+}
+
+.section-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.section-content img {
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.section-content:hover img {
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #007bff;
+}
+
+footer a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Divider */
+.section-divider {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #007bff, transparent);
+    margin: 20px 0;
+}
+
+/* Estilos para el contenido de otras páginas */
+main {
+    background-color: #1a1a1a;
+    min-height: calc(100vh - 200px);
+    padding: 20px 0;
+}
+
+/* Texto y enlaces */
+a {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-buttons .btn {
+        margin: 10px;
+        width: 80%;
+    }
+
+    .section-content {
+        text-align: center;
+    }
+
+    .section-content img {
+        margin-top: 2rem;
+    }
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #007bff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-content {
+    background: #2d2d2d;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: calc(50% - 40px);
+    position: relative;
+    margin-left: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 0;
+}
+
+.timeline-content h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.feature-card {
+    background: #2d2d2d;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Comparison Cards */
+.comparison-card {
+    background: #2d2d2d;
+    padding: 30px;
+    border-radius: 8px;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.comparison-card h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comparison-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.comparison-card li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.comparison-card li::before {
+    content: '•';
+    color: #007bff;
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 31px;
+    }
+
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 80px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Fondos de sección */
+.timeline-section {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Características con imágenes */
+.feature-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-image {
+    margin: -30px -30px 20px -30px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-image img {
+    transform: scale(1.1);
+}
+
+/* Ventajas y Desventajas con fondo */
+.comparison-section {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Iconos en listas */
+.comparison-card li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.comparison-card li i {
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+.timeline-section {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('../images/kali-timeline-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+/* Sección Ventajas y Desventajas */
+.comparison-section {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('../images/kali-pros-cons-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+/* Estilos para la página de procesos */
+.command-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.command-section code {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #1a1a1a;
+    color: #00ff00;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.card h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card h3 i {
+    font-size: 1.2em;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.card ul li::before {
+    content: "→";
+    color: #007bff;
+    position: absolute;
+    left: 0;
+}
+
+/* Estilos para la página de sistemas distribuidos */
+.tool-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tool-section h4 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.tool-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.tool-section ul li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.tool-section ul li::before {
+    content: "•";
+    color: #007bff;
+    position: absolute;
+    left: 0;
+}

@@ -1,0 +1,93 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Inicio - Kali Linux{% endblock %}
+
+{% block content %}
+<!-- Hero Section con fondo completo -->
+<section class="hero-full">
+    <div class="container">
+        <div class="hero-content text-center">
+            <h1 class="display-4">Kali Linux: Domina la seguridad informática</h1>
+            <p class="lead">La distribución Linux líder en seguridad informática y pruebas de penetración</p>
+            <div class="hero-buttons mt-4">
+                <a href="https://www.kali.org/get-kali/" class="btn btn-primary btn-lg mx-2" target="_blank">
+                    <i class="fas fa-download me-2"></i>Descargar
+                </a>
+                <a href="https://www.kali.org/docs/" class="btn btn-outline-light btn-lg mx-2" target="_blank">
+                    <i class="fas fa-book me-2"></i>Documentación
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secciones de Exploración -->
+<section class="explore-section">
+    <div class="container">
+        <div class="section-divider"></div>
+        <!-- Historia y Características -->
+        <div class="row align-items-center section-content">
+            <div class="col-md-6">
+                <h2>Historia y Características</h2>
+                <p>Descubre los orígenes de Kali Linux, su evolución desde BackTrack y las características que lo han convertido en la distribución líder en seguridad informática. Conoce sus herramientas preinstaladas y capacidades únicas.</p>
+                <a href="{{ url_for('about') }}" class="btn btn-primary">Explorar más</a>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/history.jpg') }}" alt="Historia y Características" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="explore-section bg-dark">
+    <div class="container">
+        <!-- Aspectos Técnicos -->
+        <div class="row align-items-center section-content flex-row-reverse">
+            <div class="col-md-6">
+                <h2>Aspectos Técnicos</h2>
+                <p>Explora los aspectos técnicos de Kali Linux, incluyendo la gestión de procesos y memoria. Comprende cómo el sistema operativo maneja los recursos y optimiza el rendimiento para las tareas de seguridad.</p>
+                <a href="{{ url_for('processes') }}" class="btn btn-primary">Explorar más</a>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/technical.jpg') }}" alt="Aspectos Técnicos" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="explore-section">
+    <div class="container">
+        <!-- Sistemas Distribuidos -->
+        <div class="row align-items-center section-content">
+            <div class="col-md-6">
+                <h2>Sistemas Distribuidos</h2>
+                <p>Conoce cómo Kali Linux opera en entornos distribuidos, sus capacidades para pruebas de penetración en redes y sistemas distribuidos, y las herramientas especializadas para análisis de seguridad en infraestructuras complejas.</p>
+                <a href="{{ url_for('distributed') }}" class="btn btn-primary">Explorar más</a>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/distributed.jpg') }}" alt="Sistemas Distribuidos" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="explore-section bg-dark">
+    <div class="container">
+        <!-- Servidores -->
+        <div class="row align-items-center section-content flex-row-reverse">
+            <div class="col-md-6">
+                <h2>Servidores</h2>
+                <p>Explora cómo Kali Linux interactúa con diferentes tipos de servidores, sus herramientas para pruebas de seguridad en entornos de servidor y las mejores prácticas para la administración segura de servicios.</p>
+                <a href="{{ url_for('servers') }}" class="btn btn-primary">Explorar más</a>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/servers.jpg') }}" alt="Servidores" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+{% endblock %}

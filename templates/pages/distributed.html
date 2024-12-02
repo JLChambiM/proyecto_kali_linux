@@ -1,0 +1,142 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Sistemas Distribuidos - Kali Linux{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content text-center">
+            <h1 class="display-4">Sistemas Distribuidos en Kali Linux</h1>
+            <p class="lead">Explora cómo Kali Linux opera y se integra en entornos distribuidos</p>
+        </div>
+    </div>
+</section>
+
+<!-- Conceptos Básicos -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Fundamentos de Sistemas Distribuidos</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-network-wired"></i> Arquitectura Distribuida</h3>
+                        <ul>
+                            <li><strong>Comunicación en Red:</strong> Protocolos y conexiones</li>
+                            <li><strong>Recursos Compartidos:</strong> Datos y servicios distribuidos</li>
+                            <li><strong>Escalabilidad:</strong> Capacidad de crecimiento</li>
+                            <li><strong>Tolerancia a Fallos:</strong> Redundancia y recuperación</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-share-nodes"></i> Características</h3>
+                        <ul>
+                            <li><strong>Concurrencia:</strong> Ejecución simultánea de procesos</li>
+                            <li><strong>Sincronización:</strong> Coordinación entre nodos</li>
+                            <li><strong>Seguridad:</strong> Protección de datos y comunicaciones</li>
+                            <li><strong>Transparencia:</strong> Acceso unificado a recursos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Herramientas Distribuidas -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Herramientas para Entornos Distribuidos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-magnifying-glass-network"></i> Análisis de Red</h3>
+                        <div class="tool-section">
+                            <h4>Wireshark</h4>
+                            <p>Analizador de protocolos de red</p>
+                            <ul>
+                                <li>Captura de paquetes en tiempo real</li>
+                                <li>Análisis de tráfico distribuido</li>
+                                <li>Inspección detallada de protocolos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-radar"></i> Monitoreo</h3>
+                        <div class="tool-section">
+                            <h4>Nagios</h4>
+                            <p>Sistema de monitoreo de red</p>
+                            <ul>
+                                <li>Supervisión de servicios distribuidos</li>
+                                <li>Alertas y notificaciones</li>
+                                <li>Monitoreo de recursos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-shield-virus"></i> Seguridad</h3>
+                        <div class="tool-section">
+                            <h4>Snort</h4>
+                            <p>Sistema de detección de intrusos</p>
+                            <ul>
+                                <li>Análisis de tráfico en tiempo real</li>
+                                <li>Detección de amenazas</li>
+                                <li>Protección de red distribuida</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Casos de Uso -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Aplicaciones en Entornos Distribuidos</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-users-gear"></i> Escenarios de Uso</h3>
+                        <ul>
+                            <li><strong>Pruebas de Penetración:</strong> Evaluación de seguridad en redes distribuidas</li>
+                            <li><strong>Análisis Forense:</strong> Investigación de incidentes en sistemas distribuidos</li>
+                            <li><strong>Auditoría de Red:</strong> Evaluación de seguridad empresarial</li>
+                            <li><strong>Monitoreo de Infraestructura:</strong> Supervisión de sistemas complejos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-list-check"></i> Mejores Prácticas</h3>
+                        <ul>
+                            <li><strong>Segmentación de Red:</strong> División lógica de recursos</li>
+                            <li><strong>Control de Acceso:</strong> Gestión de permisos distribuidos</li>
+                            <li><strong>Redundancia:</strong> Sistemas de respaldo y failover</li>
+                            <li><strong>Monitoreo Continuo:</strong> Supervisión proactiva</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,138 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Acerca de - Kali Linux{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content text-center">
+            <h1 class="display-4">Historia y Características</h1>
+            <p class="lead">Descubre los orígenes y evolución de Kali Linux</p>
+        </div>
+    </div>
+</section>
+
+<!-- Historia Timeline Section -->
+<section class="explore-section timeline-section">
+    <div class="section-background"></div>
+    <div class="container">
+        <h2 class="text-center mb-5">Historia de Kali Linux</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2013</h3>
+                    <h4>Nacimiento de Kali Linux</h4>
+                    <p>Lanzamiento oficial como sucesor de BackTrack Linux, desarrollado por Offensive Security. Basado en Debian, marcó un nuevo estándar en las distribuciones de seguridad.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2015</h3>
+                    <h4>Kali 2.0</h4>
+                    <p>Primera actualización importante con una interfaz completamente renovada y mejoras significativas en el rendimiento.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2019</h3>
+                    <h4>Modo Undercover</h4>
+                    <p>Introducción del modo "Undercover" para trabajo encubierto, permitiendo a Kali mezclarse en entornos empresariales.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2020</h3>
+                    <h4>Usuario no root</h4>
+                    <p>Cambio significativo al establecer una cuenta de usuario no root por defecto, mejorando la seguridad del sistema.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Características Section -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Características Principales</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="{{ url_for('static', filename='images/tools.jpg') }}" alt="Herramientas">
+                </div>
+                <div class="feature-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>600+ Herramientas</h3>
+                <p>Amplia colección de herramientas preinstaladas para pruebas de penetración y auditorías de seguridad.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="{{ url_for('static', filename='images/tools.jpg') }}" alt="Herramientas">
+                </div>
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Seguridad Mejorada</h3>
+                <p>Kernel personalizado y configuraciones orientadas a la seguridad desde su instalación.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="{{ url_for('static', filename='images/tools.jpg') }}" alt="Herramientas">
+                </div>
+                <div class="feature-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Soporte de Red</h3>
+                <p>Amplio soporte para dispositivos inalámbricos y herramientas de análisis de red.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="{{ url_for('static', filename='images/tools.jpg') }}" alt="Herramientas">
+                </div>
+                <div class="feature-icon">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <h3>Código Abierto</h3>
+                <p>Software libre y de código abierto, permitiendo personalización y contribuciones de la comunidad.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ventajas y Desventajas -->
+<!-- Ventajas y Desventajas -->
+<section class="explore-section comparison-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Ventajas y Desventajas</h2>
+        <div class="comparison-section">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="comparison-card advantages">
+                        <h3><i class="fa-solid fa-circle-plus"></i> Ventajas</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-shield"></i> Gratuito y de código abierto</li>
+                            <li><i class="fa-solid fa-screwdriver-wrench"></i> Amplia colección de herramientas</li>
+                            <li><i class="fa-solid fa-people-group"></i> Comunidad activa</li>
+                            <li><i class="fa-solid fa-book-open"></i> Documentación detallada</li>
+                            <li><i class="fa-solid fa-microchip"></i> Compatible con múltiples arquitecturas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="comparison-card disadvantages">
+                        <h3><i class="fa-solid fa-circle-minus"></i> Desventajas</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-stairs"></i> Curva de aprendizaje pronunciada</li>
+                            <li><i class="fa-solid fa-terminal"></i> Requiere conocimientos técnicos</li>
+                            <li><i class="fa-solid fa-ban"></i> No para uso diario</li>
+                            <li><i class="fa-solid fa-microchip"></i> Alto consumo de recursos</li>
+                            <li><i class="fa-solid fa-triangle-exclamation"></i> Complejo para principiantes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

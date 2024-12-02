@@ -1,0 +1,156 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Gestión de Procesos - Kali Linux{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content text-center">
+            <h1 class="display-4">Gestión de Procesos en Kali Linux</h1>
+            <p class="lead">Comprende cómo Kali Linux maneja y gestiona los procesos del sistema</p>
+        </div>
+    </div>
+</section>
+
+<!-- Conceptos Básicos -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Conceptos Fundamentales</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-microchip"></i> ¿Qué es un Proceso?</h3>
+                        <p>Un proceso es una instancia de un programa en ejecución. En Kali Linux, como en otros sistemas Unix, cada proceso tiene:</p>
+                        <ul>
+                            <li>Un ID único (PID)</li>
+                            <li>Un proceso padre (PPID)</li>
+                            <li>Recursos asignados</li>
+                            <li>Estado de ejecución</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-code-branch"></i> Estados de Procesos</h3>
+                        <p>Los procesos en Kali Linux pueden estar en diferentes estados:</p>
+                        <ul>
+                            <li>Running (En ejecución)</li>
+                            <li>Sleeping (En espera)</li>
+                            <li>Stopped (Detenido)</li>
+                            <li>Zombie (Terminado pero no limpiado)</li>
+                            <li>Dead (Terminado)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Herramientas de Gestión -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Herramientas de Gestión de Procesos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-terminal"></i> Comandos Básicos</h3>
+                        <div class="command-section">
+                            <code>ps</code>
+                            <p>Muestra los procesos activos</p>
+                        </div>
+                        <div class="command-section">
+                            <code>top</code>
+                            <p>Monitor de procesos en tiempo real</p>
+                        </div>
+                        <div class="command-section">
+                            <code>kill</code>
+                            <p>Termina procesos por PID</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-chart-line"></i> Monitoreo Avanzado</h3>
+                        <div class="command-section">
+                            <code>htop</code>
+                            <p>Versión mejorada de top con interfaz interactiva</p>
+                        </div>
+                        <div class="command-section">
+                            <code>atop</code>
+                            <p>Monitor de rendimiento del sistema</p>
+                        </div>
+                        <div class="command-section">
+                            <code>glances</code>
+                            <p>Monitor de sistema multiplataforma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-sliders"></i> Control de Procesos</h3>
+                        <div class="command-section">
+                            <code>nice/renice</code>
+                            <p>Ajusta la prioridad de los procesos</p>
+                        </div>
+                        <div class="command-section">
+                            <code>pgrep</code>
+                            <p>Busca procesos por nombre</p>
+                        </div>
+                        <div class="command-section">
+                            <code>pkill</code>
+                            <p>Termina procesos por nombre</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gestión de Recursos -->
+<section class="explore-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Gestión de Recursos del Sistema</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-gauge-high"></i> Rendimiento</h3>
+                        <p>Kali Linux proporciona varias herramientas para monitorear y optimizar el rendimiento del sistema:</p>
+                        <ul>
+                            <li>Monitoreo de CPU y memoria</li>
+                            <li>Control de procesos en background</li>
+                            <li>Gestión de servicios del sistema</li>
+                            <li>Análisis de rendimiento</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3><i class="fa-solid fa-shield-halved"></i> Seguridad</h3>
+                        <p>Aspectos de seguridad en la gestión de procesos:</p>
+                        <ul>
+                            <li>Aislamiento de procesos</li>
+                            <li>Control de acceso</li>
+                            <li>Monitoreo de actividades sospechosas</li>
+                            <li>Protección contra malware</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
